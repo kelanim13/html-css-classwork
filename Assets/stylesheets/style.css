@@ -1,0 +1,144 @@
+/* this is a note/comment */ 
+
+h1 {
+    position: relative; 
+    background-color: gray;
+    color: white;
+    width: 800px;
+    /*
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    padding-right: 50px;
+    */
+
+    /* same as padding above all in one line */
+    padding: 25px 50px 12px 50px; 
+    border-style: solid;
+    margin-left: inherit; 
+    margin-right: 20%;
+
+    /* percentage, set to auto, pixels 
+        "inherit" set margin to whatever parent element is
+    */
+
+}
+
+/* this is a tag selector. It refers to all h2 tags */
+h2 {
+    color: red;
+    height: 50px;
+}
+
+/*  this is an id selector. It refers to the element 
+    * that has the attribute 'id="firstparagraph"'
+    * it is an id selector because it starts with "#"
+*/
+
+p {
+    font-weight: bold;
+    font-size: 1em;
+    font-family: cursive;
+    font-style: italic;
+    color: green;
+}
+
+#firstparagraph {
+    color: black;
+}
+
+#whatever {
+    color: blueviolet;
+    background-color: burlywood;
+}
+
+/*  this is a class selector. it refers to all the elements
+    * that ahve the attribute  'class="center"'
+    * it is a class selector becaust it starts with "."
+*/
+
+.centered {
+    text-align: center
+}
+
+.gigantic {
+    font-size: 1px;
+    font-size: 75px;
+}
+
+body {
+    background-color: #42adf5;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png"); 
+}
+
+/*unvisited link */
+a:link {
+    color: green;
+}
+
+/* pseud-class slector examples:
+    * these select elements based upon the 
+    * state of the element -- you add ":<state>"
+    * after another type of selector.
+*/
+
+
+/*visited link */
+a:visited {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+h1:hover {
+    background-color: red;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+.centered:hover {
+    color: brown;
+}
+/* specify state of link */
+
+#secondsection {
+    position: sticky; 
+    top: 10px;
+    font-size: 30px;
+}
+
+#small {
+    font-size: 10px;
+}
+
+/* target all p tags inside of div tags */
+#secondsection p {
+    font-style: italic;
+}
+
+/* target all h2 and p tags */
+h2, p {
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 300px
+}
+
+
+
